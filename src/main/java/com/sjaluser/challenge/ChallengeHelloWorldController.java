@@ -22,7 +22,7 @@ class ChallengeHelloWorldController {
 	 @RequestMapping("/hello")
 	 public String hello(@RequestParam("navigator") String navigator) {
 
-        logger.info(String.format("Hello World request, navigator %s", navigator));
+        logger.info(String.format("Hello World request, navigator param: %s", navigator));
 		return challengeHelloWorld.hello(navigator);
  	}
 }
