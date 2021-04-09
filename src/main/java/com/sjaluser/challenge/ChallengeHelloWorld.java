@@ -10,7 +10,16 @@ public class ChallengeHelloWorld {
 		SpringApplication.run(ChallengeHelloWorld.class, args);
 	}
 
-	String hello(String navigator) {
-		return "Hello World " + navigator;
+	/**
+	 * Says Hello
+	 * 
+	 * @param navigator
+	 * @return response
+	 */
+	UserResponse hello(String navigator) {
+		UserResponse  userResponse = new UserResponse();
+		userResponse.setMessage("Hello World " + navigator);
+		return userResponse;
    }
+
 }
