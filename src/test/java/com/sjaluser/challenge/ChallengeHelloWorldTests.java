@@ -17,7 +17,7 @@ class ChallengeHelloWorldTests {
 
 	 @Test
 	 public void testHelloWorld() {
-		assertEquals("Hello World Chrome", challengeHelloWorld.hello("Chrome"));
+		assertEquals("Hello World Chrome.", challengeHelloWorld.hello("Chrome").getMessage());
 	 }
 
 
