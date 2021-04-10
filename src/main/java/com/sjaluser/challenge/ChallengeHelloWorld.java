@@ -18,7 +18,7 @@ public class ChallengeHelloWorld {
 	 */
 	UserResponse hello(String navigator) {
 		UserResponse  userResponse = new UserResponse();
-		userResponse.setMessage("Hello World " + navigator);
+		userResponse.setMessage(String.format("Hello World: %s.", navigator));
 		return userResponse;
    }
 

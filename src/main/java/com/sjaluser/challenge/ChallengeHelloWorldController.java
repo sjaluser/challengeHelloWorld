@@ -22,7 +22,7 @@ class ChallengeHelloWorldController {
 	 @PostMapping("/hello/{navigator}")
 	 public UserResponse hello(@PathVariable String navigator) {
 
-        logger.info(String.format("Hello World request, navigator param: %s", navigator));
+        logger.info("Hello World request, navigator param: {}", navigator);
 		return challengeHelloWorld.hello(navigator);
  	}
 }
