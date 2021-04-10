@@ -25,4 +25,12 @@ class ChallengeHelloWorldController {
         logger.info("Hello World request, navigator param: {}", navigator);
 		return challengeHelloWorld.hello(navigator);
  	}
+
+	 @CrossOrigin
+	 @PostMapping("/hello")
+	 public UserResponse helloVoid() {
+
+        logger.info("Hello World request without navigator param.");
+		return challengeHelloWorld.hello(null);
+ 	}
 }
