@@ -14,11 +14,15 @@ public class ChallengeHelloWorld {
 	 * Says Hello
 	 * 
 	 * @param navigator
-	 * @return response
+	 * @return JSON with Hello Response.
 	 */
 	UserResponse hello(String navigator) {
 		UserResponse  userResponse = new UserResponse();
-		userResponse.setMessage(String.format("Hello World: %s.", navigator));
+		if (navigator!=null) {
+			userResponse.setMessage(String.format("Hello World %s.", navigator));
+		} else {
+			userResponse.setMessage("Hello World.");
+		}
 		return userResponse;
    }
 
