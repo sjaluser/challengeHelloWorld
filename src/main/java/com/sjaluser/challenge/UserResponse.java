@@ -7,7 +7,7 @@ public class UserResponse {
 
     public UserResponse() {
         success= true;
-        apiVersion= "1.2";
+        apiVersion= "1.3";
     }
     
     /**
